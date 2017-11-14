@@ -14492,6 +14492,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="GND15" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="J10" library="SparkFun-Connectors" deviceset="CONN_02" device=""/>
+<part name="R25" library="SparkFun-Resistors" deviceset="100KOHM-1/10W-1%(0603)" device="" value="100k"/>
 </parts>
 <sheets>
 <sheet>
@@ -14634,6 +14635,7 @@ RAW: 3.6V - 5.5V</text>
 <instance part="U4" gate="G$1" x="106.68" y="25.4"/>
 <instance part="GND20" gate="1" x="88.9" y="15.494"/>
 <instance part="SUPPLY11" gate="G$1" x="132.08" y="38.1"/>
+<instance part="R25" gate="G$1" x="226.06" y="60.96" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -14854,6 +14856,10 @@ RAW: 3.6V - 5.5V</text>
 <pinref part="R16" gate="G$1" pin="2"/>
 <wire x1="220.98" y1="71.12" x2="218.44" y2="71.12" width="0.1524" layer="91"/>
 <junction x="218.44" y="78.74"/>
+<wire x1="218.44" y1="71.12" x2="218.44" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="R25" gate="G$1" pin="2"/>
+<wire x1="218.44" y1="60.96" x2="220.98" y2="60.96" width="0.1524" layer="91"/>
+<junction x="218.44" y="71.12"/>
 </segment>
 </net>
 <net name="PWRBTN" class="0">
@@ -15344,6 +15350,11 @@ RAW: 3.6V - 5.5V</text>
 <pinref part="U4" gate="G$1" pin="!CS"/>
 <wire x1="91.44" y1="30.48" x2="88.9" y2="30.48" width="0.1524" layer="91"/>
 <label x="88.9" y="30.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R25" gate="G$1" pin="1"/>
+<wire x1="231.14" y1="60.96" x2="236.22" y2="60.96" width="0.1524" layer="91"/>
+<label x="236.22" y="60.96" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SCLK" class="0">

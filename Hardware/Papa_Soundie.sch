@@ -14493,6 +14493,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND15" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="J10" library="SparkFun-Connectors" deviceset="CONN_02" device=""/>
 <part name="R25" library="SparkFun-Resistors" deviceset="100KOHM-1/10W-1%(0603)" device="" value="100k"/>
+<part name="H3" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device="TIGHT"/>
 </parts>
 <sheets>
 <sheet>
@@ -14636,6 +14637,7 @@ RAW: 3.6V - 5.5V</text>
 <instance part="GND20" gate="1" x="88.9" y="15.494"/>
 <instance part="SUPPLY11" gate="G$1" x="132.08" y="38.1"/>
 <instance part="R25" gate="G$1" x="226.06" y="60.96" rot="R180"/>
+<instance part="H3" gate="G$1" x="243.84" y="27.94"/>
 </instances>
 <busses>
 </busses>

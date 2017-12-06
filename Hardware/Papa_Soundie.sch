@@ -14499,7 +14499,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheet>
 <plain>
 <text x="166.37" y="11.684" size="2.1844" layer="94" font="vector">Mary West</text>
-<text x="238.76" y="7.62" size="1.778" layer="94" font="vector">v01</text>
+<text x="238.76" y="7.62" size="1.778" layer="94" font="vector">v02</text>
 <wire x1="0" y1="60.96" x2="0" y2="63.5" width="0.1524" layer="97" style="shortdash"/>
 <text x="148.844" y="78.486" size="2.54" layer="97" font="vector" ratio="10">Decoupling</text>
 <text x="226.568" y="142.24" size="1.27" layer="97">Left and Right are AC
@@ -14930,11 +14930,6 @@ RAW: 3.6V - 5.5V</text>
 <pinref part="SUPPLY16" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="C4" gate="G$1" pin="1"/>
-<pinref part="AVDD6" gate="G$1" pin="VCC"/>
-<wire x1="175.26" y1="68.58" x2="175.26" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U4" gate="G$1" pin="VCC"/>
 <wire x1="127" y1="30.48" x2="132.08" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="!HOLD(D3)"/>
@@ -14969,6 +14964,11 @@ RAW: 3.6V - 5.5V</text>
 <wire x1="81.28" y1="170.18" x2="81.28" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="AVDD" gate="G$1" pin="VCC"/>
 <junction x="81.28" y="170.18"/>
+</segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="AVDD6" gate="G$1" pin="VCC"/>
+<wire x1="175.26" y1="68.58" x2="175.26" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CVDD" class="0">

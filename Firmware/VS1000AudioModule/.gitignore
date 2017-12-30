@@ -1,0 +1,6 @@
+Emulation-Debug/*
+*.sw*
+*.spi
+*.available
+*.a
+*.PRG

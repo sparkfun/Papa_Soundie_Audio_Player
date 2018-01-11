@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.1">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -14824,7 +14823,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R25" library="SparkFun-Resistors" deviceset="100KOHM-1/10W-1%(0603)" device="" value="100k"/>
 <part name="H3" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device="TIGHT"/>
 <part name="GND13" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="GND21" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="D2" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
 <part name="R18" library="SparkFun-Resistors" deviceset="2.0KOHM" device="-0603-1/10W-5%" value="2.0k"/>
 <part name="GND23" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -14837,7 +14835,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheet>
 <plain>
 <text x="166.37" y="11.684" size="2.1844" layer="94" font="vector">Mary West</text>
-<text x="238.76" y="7.62" size="1.778" layer="94" font="vector">v02</text>
+<text x="238.76" y="7.62" size="1.778" layer="94" font="vector">v03</text>
 <wire x1="0" y1="60.96" x2="0" y2="63.5" width="0.1524" layer="97" style="shortdash"/>
 <text x="148.844" y="78.486" size="2.54" layer="97" font="vector" ratio="10">Decoupling</text>
 <text x="226.568" y="142.24" size="1.27" layer="97">Left and Right are AC
@@ -14850,8 +14848,6 @@ recommended.</text>
 <text x="186.944" y="180.086" size="2.54" layer="97" font="vector" ratio="10">Audio Decoupling</text>
 <wire x1="142.24" y1="185.42" x2="142.24" y2="139.7" width="0.1524" layer="97" style="longdash"/>
 <wire x1="142.24" y1="139.7" x2="248.92" y2="139.7" width="0.1524" layer="97" style="longdash"/>
-<text x="106.68" y="157.48" size="1.778" layer="97" font="vector">VS1000D 
-RAW: 3.6V - 5.5V</text>
 <text x="2.54" y="55.88" size="2.54" layer="97" font="vector" ratio="10">MicroSD Card Socket</text>
 <text x="149.86" y="134.62" size="2.54" layer="97" font="vector" ratio="10">Pull-Ups and Pull-Downs</text>
 <wire x1="147.32" y1="35.56" x2="147.32" y2="60.96" width="0.1524" layer="97" style="longdash"/>
@@ -14865,6 +14861,7 @@ RAW: 3.6V - 5.5V</text>
 <wire x1="210.82" y1="83.82" x2="210.82" y2="35.56" width="0.1524" layer="97" style="longdash"/>
 <text x="73.66" y="55.88" size="2.54" layer="97" font="vector" ratio="10">SPI Flash</text>
 <text x="114.3" y="180.34" size="2.54" layer="97" font="vector" ratio="10">VS1000D</text>
+<text x="109.22" y="175.26" size="2.54" layer="97" font="vector">VIN: 3.3 - 6V</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -14976,7 +14973,6 @@ RAW: 3.6V - 5.5V</text>
 <instance part="SUPPLY11" gate="G$1" x="132.08" y="38.1"/>
 <instance part="R25" gate="G$1" x="226.06" y="60.96" rot="R180"/>
 <instance part="H3" gate="G$1" x="243.84" y="27.94"/>
-<instance part="GND21" gate="1" x="48.26" y="12.7"/>
 <instance part="D2" gate="G$1" x="30.48" y="116.84"/>
 <instance part="R18" gate="G$1" x="30.48" y="104.14" rot="R90"/>
 <instance part="GND23" gate="1" x="30.48" y="93.98"/>
@@ -15145,12 +15141,6 @@ RAW: 3.6V - 5.5V</text>
 <wire x1="88.9" y1="22.86" x2="88.9" y2="18.034" width="0.1524" layer="91"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 <wire x1="88.9" y1="18.034" x2="88.9" y2="17.78" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="J2" gate="1" pin="CD2"/>
-<wire x1="45.72" y1="17.78" x2="48.26" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="17.78" x2="48.26" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="GND21" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="R18" gate="G$1" pin="1"/>
@@ -15784,7 +15774,7 @@ RAW: 3.6V - 5.5V</text>
 <wire x1="0" y1="48.26" x2="0" y2="50.8" width="0.1524" layer="97" style="longdash"/>
 <text x="58.42" y="177.8" size="5.08" layer="97" font="vector" ratio="10">Arduino Control</text>
 <text x="166.624" y="12.192" size="2.032" layer="94">Mary West</text>
-<text x="237.744" y="7.112" size="2.032" layer="94">v02</text>
+<text x="237.744" y="7.112" size="2.032" layer="94">v03</text>
 <wire x1="119.38" y1="185.42" x2="127" y2="185.42" width="0.1524" layer="97" style="longdash"/>
 <wire x1="127" y1="185.42" x2="127" y2="114.3" width="0.1524" layer="97" style="longdash"/>
 <wire x1="127" y1="114.3" x2="127" y2="66.04" width="0.1524" layer="97" style="longdash"/>
@@ -15971,6 +15961,7 @@ RAW: 3.6V - 5.5V</text>
 <wire x1="30.48" y1="160.02" x2="30.48" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="165.1" x2="33.02" y2="165.1" width="0.1524" layer="91"/>
 <label x="33.02" y="165.1" size="1.27" layer="95" xref="yes"/>
+<junction x="30.48" y="160.02"/>
 </segment>
 <segment>
 <pinref part="J12" gate="G$1" pin="1"/>

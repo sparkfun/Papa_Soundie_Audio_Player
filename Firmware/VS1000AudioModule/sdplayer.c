@@ -1,4 +1,4 @@
-/*
+ /*
   Copyright 2008-2013 VLSI Solution Oy. Absolutely no warranty.
 */
 #include <stdio.h>
@@ -41,6 +41,9 @@ u_int16 queue[QUEUE_SIZE];
 //#define DEBUG_LEVEL 3
 
 #define USE_HC      /* Support SD-HC cards. */
+
+// The VLSI RDY LED on the PAPA soundie is GPIO pin 5
+#define VLSI_RDY_LED (32)
 
 
 #include <dev1000.h>
@@ -968,6 +971,9 @@ void main(void) {
                     }
                 }
 #else /*elseUART_CONTROL*/
+                PERIP(GPIO0_MODE) &= ~(VLSI_RDY_LED);
+                PERIP(GPIO0_DDR) |= (VLSI_RDY_LED);
+                PERIP(GPIO0_ODATA) |= (VLSI_RDY_LED);
                 if (player.nextFile == -1) {
                     player.currentFile = -1;
                     while ( player.currentFile == -1 ) {

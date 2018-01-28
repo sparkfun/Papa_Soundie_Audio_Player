@@ -10,6 +10,9 @@ const int GPIO_PLAY04 = 5;
 const int GPIO_PLAY05 = 6;
 const int GPIO_BUTTON1 = 9;
 const int GPIO_BUTTON2 = 10;
+const int GPIO_VLSI_POWER_BTN = 7;
+const int GPIO_ATMEGA_POWER = A2;
+
 
 /**
  * Maps a file number to it's binary representation on the GPIO pins e.g. 
@@ -39,6 +42,15 @@ void setupGPIOPins() {
 void setup() {
   pinMode(GPIO_BUTTON1, INPUT);
   pinMode(GPIO_BUTTON2, INPUT);
+  pinMode(GPIO_VLSI_POWER_BTN, OUTPUT);
+  pinMode(GPIO_VLSI_POWER_BTN, OUTPUT);
+  pinMode(GPIO_ATMEGA_POWER, OUTPUT);
+
+  digitalWrite(GPIO_VLSI_POWER_BTN, 0);
+  digitalWrite(GPIO_VLSI_POWER_BTN, 1);
+  delay(50);
+  digitalWrite(GPIO_VLSI_POWER_BTN, 0);
+  digitalWrite(GPIO_ATMEGA_POWER, 1);
   setupGPIOPins();
 }
 

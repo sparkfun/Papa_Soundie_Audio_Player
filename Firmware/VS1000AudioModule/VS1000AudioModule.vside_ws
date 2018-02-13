@@ -1,8 +1,6 @@
 <solution_tree>
 VS1000AudioModule=0
-SPIPlayer=0
 SDPlayer=0
-SDMass=0
 SDUPDATE=0
 libaudiomodule=0
 </solution_tree>

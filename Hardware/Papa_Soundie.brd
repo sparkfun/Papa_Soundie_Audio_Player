@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.1">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
@@ -160,7 +159,7 @@
 <text x="26.2255" y="46.609" size="1.524" layer="21" font="vector" ratio="20" distance="10" rot="R180" align="bottom-center">PAPA
 SOUNDIE</text>
 <text x="5.953125" y="72.7075" size="1.778" layer="47" font="vector" ratio="15">All Units Inches</text>
-<text x="7.325625" y="62.49675" size="0.8128" layer="16" font="vector" ratio="25" rot="SMR0">v03</text>
+<text x="7.325625" y="62.49675" size="0.8128" layer="16" font="vector" ratio="25" rot="SMR0">v10</text>
 <wire x1="38.1" y1="63.5" x2="0" y2="63.5" width="0.2032" layer="20"/>
 <wire x1="0" y1="63.5" x2="0" y2="0" width="0.2032" layer="20"/>
 <wire x1="0" y1="0" x2="38.1" y2="0" width="0.2032" layer="20"/>
@@ -2902,11 +2901,10 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
+<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="1"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
-<param name="checkStop" value="0"/>
-<param name="checkValues" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>

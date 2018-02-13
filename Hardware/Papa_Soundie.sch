@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.1">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -14836,7 +14835,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheet>
 <plain>
 <text x="166.37" y="11.684" size="2.1844" layer="94" font="vector">Mary West</text>
-<text x="238.76" y="7.62" size="1.778" layer="94" font="vector">v03</text>
+<text x="238.76" y="7.62" size="1.778" layer="94" font="vector">v10</text>
 <wire x1="0" y1="60.96" x2="0" y2="63.5" width="0.1524" layer="97" style="shortdash"/>
 <text x="148.844" y="78.486" size="2.54" layer="97" font="vector" ratio="10">Decoupling</text>
 <text x="226.568" y="142.24" size="1.27" layer="97">Left and Right are AC
@@ -14862,7 +14861,7 @@ recommended.</text>
 <wire x1="210.82" y1="83.82" x2="210.82" y2="35.56" width="0.1524" layer="97" style="longdash"/>
 <text x="73.66" y="55.88" size="2.54" layer="97" font="vector" ratio="10">SPI Flash</text>
 <text x="114.3" y="180.34" size="2.54" layer="97" font="vector" ratio="10">VS1000D</text>
-<text x="109.22" y="175.26" size="2.54" layer="97" font="vector">VIN: 3.3 - 6V</text>
+<text x="109.22" y="175.26" size="2.54" layer="97" font="vector">VIN: 3.3 - 9V</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -15765,7 +15764,7 @@ recommended.</text>
 <wire x1="0" y1="48.26" x2="0" y2="50.8" width="0.1524" layer="97" style="longdash"/>
 <text x="58.42" y="177.8" size="5.08" layer="97" font="vector" ratio="10">Arduino Control</text>
 <text x="166.624" y="12.192" size="2.032" layer="94">Mary West</text>
-<text x="237.744" y="7.112" size="2.032" layer="94">v03</text>
+<text x="237.744" y="7.112" size="2.032" layer="94">v10</text>
 <wire x1="119.38" y1="185.42" x2="127" y2="185.42" width="0.1524" layer="97" style="longdash"/>
 <wire x1="127" y1="185.42" x2="127" y2="114.3" width="0.1524" layer="97" style="longdash"/>
 <wire x1="127" y1="114.3" x2="127" y2="66.04" width="0.1524" layer="97" style="longdash"/>

@@ -9,21 +9,15 @@ Name                           = "VS1000AudioModule"
 ActiveConfiguration            = "Emulation-Debug"
 ParentSolution                 = "VS1000_Solution"
 ActiveProject                  = "SDPlayer"
-Projects                       = "VS1000AudioModule","SPIPlayer","SDPlayer","SDMass","SDUPDATE","libaudiomodule"
+Projects                       = "VS1000AudioModule","SDPlayer","SDUPDATE","libaudiomodule"
 Configurations                 = "Emulation-Debug"
 OverlaySupport                 = "0"
 
 [PROJ_VS1000AudioModule]
 ProjectFile                    = "VS1000AudioModule.project"
 
-[PROJ_SPIPlayer]
-ProjectFile                    = "SPIPlayer.project"
-
 [PROJ_SDPlayer]
 ProjectFile                    = "SDPlayer.project"
-
-[PROJ_SDMass]
-ProjectFile                    = "SDMass.project"
 
 [PROJ_SDUPDATE]
 ProjectFile                    = "SDUPDATE.project"
@@ -35,8 +29,8 @@ ProjectFile                    = "libaudiomodule.project"
 DebugMode                      = "HW Emulation"
 PostBuildCmd                   = ""
 SimulationCores                = 
-ProjActiveConfigs              = "libaudiomodule:Emulation-Debug","VS1000AudioModule:Emulation-Debug","SPIPlayer:Emulation-Debug","SDPlayer:Emulation-Debug","SDMass:Emulation-Debug","SDUPDATE:Emulation-Debug"
-EmuSerialPort                  = "COM8"
+ProjActiveConfigs              = "libaudiomodule:Emulation-Debug","VS1000AudioModule:Emulation-Debug","SDPlayer:Emulation-Debug","SDUPDATE:Emulation-Debug"
+EmuSerialPort                  = "COM1"
 EmuInitSpeed                   = "115200"
 EmuTargetSpeed                 = "115200"
 EmuSpeedMultiplier             = "1"

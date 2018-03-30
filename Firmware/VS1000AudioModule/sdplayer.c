@@ -1027,6 +1027,10 @@ void main(void) {
                 gpName[2] = (('O'<<8) | '0') + (player.currentFile / 10);
                 gpName[3] = ((player.currentFile % 10) << 8) + (('0'<<8) | ' ');
                 gpNum = OPENFILENAMED(gpName, FAT_MKID('O','G','G'));
+                if (gpNum == 0xffffU) {
+                    gpNum = OPENFILENAMED(gpName, FAT_MKID('W','A','V'));
+                }
+
                 if (gpNum != 0xffffU)
 #else
 #ifdef USE_QUEUE

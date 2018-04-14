@@ -12,18 +12,18 @@
 
 /* Note: the data in uartRxBuffer[] is bytes, not words. */
 extern __y u_int16 uartRxBuffer[RX_BUF_SIZE];
-extern volatile __y u_int16 * __y uartRxWrPtr;
-extern __y u_int16 * __y uartRxRdPtr;
+extern volatile __y u_int16 *__y uartRxWrPtr;
+extern __y u_int16 *__y uartRxRdPtr;
 
-int UartFill(void);
-int UartGetByte(void);
-void MyRxIntCommand(void);
+int UartFill (void);
+int UartGetByte (void);
+void MyRxIntCommand (void);
 
 /** Player support routines, see uart.c. */
-void UartLoadCheck(struct CodecServices *cs, s_int16 n);
-void UartIdleHook(void);
-void UartInit(void); // Redirect RX interrupt etc.
+void UartLoadCheck (struct CodecServices *cs, s_int16 n);
+void UartIdleHook (void);
+void UartInit (void);           // Redirect RX interrupt etc.
 
 #endif
 
-#endif/*!_UART_H*/
+#endif /* !_UART_H */

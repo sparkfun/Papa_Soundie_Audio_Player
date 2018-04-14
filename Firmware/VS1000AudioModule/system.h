@@ -2,8 +2,10 @@
 #define SYSTEM_H
 
 //#define UART_CONTROL // Control the player through UART
-#define GPIO_CONTROL // Control the player through GPIO, see more defines from gpioctrl.h
-#define GPIO_NUMBERED_FILES // Control the player through GPIO, see more defines from gpioctrl.h
+#define GPIO_CONTROL  // Control the player through GPIO, see more defines from 
+                      // gpioctrl.h
+#define GPIO_NUMBERED_FILES // Control the player through GPIO, see more
+                            // defines from gpioctrl.h
 
 
 //#define SHOW_LONG_FILENAMES // Show long filenames in the "L" command
@@ -19,10 +21,10 @@
 //#define GAPLESS
 
 
-#define DISABLE_USB //Disable USB code from sdplayer to give room for queue
+#define DISABLE_USB // Disable USB code from sdplayer to give room for queue
 //#define USE_QUEUE   //START_IN_FILE_MODE implied
-#define USE_POWERBUTTON //Allow powerbutton to power off the module
-#define USE_INFO /* include 'i'nfo and 'I'nfo commands */
+#define USE_POWERBUTTON // Allow powerbutton to power off the module
+#define USE_INFO  /* include 'i'nfo and 'I'nfo commands */
 //#define USE_TYPE /* include 'T'ype command */
 //#define EXTCLOCK 13000 /*set clock if not 12MHz. usbmass.c sets clock at first boot */
 
@@ -46,7 +48,7 @@
    This is most important to be correct when you format the SPI FLASH
    mass storage drive through USB.
  */
-#define CHIP_TOTAL_BLOCKS  32768 /*  32768 * 512 bytes = 16MB */
+#define CHIP_TOTAL_BLOCKS  32768  /* 32768 * 512 bytes = 16MB */
 //#define CHIP_TOTAL_BLOCKS  8192 /*  8192 * 512 bytes = 4M (Winbond 25X32) */
 //#define CHIP_TOTAL_BLOCKS  4096 /*  4096 * 512 bytes = 2M (Winbond 25X16) */
 //#define CHIP_TOTAL_BLOCKS 512  /* 512 * 512 bytes = 256K (Winbond 25X20) */
@@ -62,13 +64,13 @@
 // storing the disk data uninverted (as is) makes it easier to debug the SPI image
 #define USE_INVERTED_DISK_DATA 1
 
-#define GPIO0_PULLUPS   0x1b80 // Audio module has pull-ups in these pins
+#define GPIO0_PULLUPS   0x1b80  // Audio module has pull-ups in these pins
 
 #ifdef ASM
 #else
 #define PLAYER_WAIT_FOR_COMMAND 0
 #define PLAYER_CONTINUOUS_PLAY  1
-extern int playerMode; // = PLAYER_CONTINUOUS_PLAY;
+extern int playerMode;          // = PLAYER_CONTINUOUS_PLAY;
 
 #ifdef GAPLESS
 #ifndef COD_VORBIS_GENERAL_H
@@ -76,7 +78,8 @@ extern int playerMode; // = PLAYER_CONTINUOUS_PLAY;
 #include <vstypes.h>
 #include <codec.h>
 #define COD_VORBIS_MAX_CHANNELS 2
-struct CodecVorbis {
+struct CodecVorbis
+{
   struct Codec c;
   s_int16 used;
   u_int16 state;
@@ -105,24 +108,23 @@ struct CodecVorbis {
 };
 #endif /* !COD_VORBIS_GENERAL_H */
 extern struct CodecVorbis codecVorbis;
-#endif/*GAPLESS*/
-
-
-enum CodecError PlayWavOrOggFile(void);
-enum CodecError PlayGaplessOggFile(void);
+#endif /*GAPLESS*/
+enum CodecError PlayWavOrOggFile (void);
+enum CodecError PlayGaplessOggFile (void);
 
 
 #define GPIO0_SD_POWER GPIO0_ALE
-void CheckSd(void); //called by uart.c and gpio.c to check SD insert/remove
+void CheckSd (void);            // called by uart.c and gpio.c to check SD
+                                // insert/remove
 
 #include <vstypes.h>
 /* generic support functions */
-void putstrp(register __i0 u_int16 *packedStr);
-unsigned short atou(register __i2 const char *s);
+void putstrp (register __i0 u_int16 * packedStr);
+unsigned short atou (register __i2 const char *s);
 
 #if defined(UART_CONTROL) && defined(GPIO_CONTROL)
-error_both_UART_CONTROL_and_GPIO_CONTROL_can_not_be_on_at_the_same_time();
+error_both_UART_CONTROL_and_GPIO_CONTROL_can_not_be_on_at_the_same_time ();
 #endif
 #endif
 
-#endif/*!SYSTEM_H*/
+#endif /* !SYSTEM_H */

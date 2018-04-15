@@ -1,0 +1,4 @@
+playFileNumber	KEYWORD2
+playRepeat	KEYWORD2
+stopRepeat	KEYWORD2
+PapaSoundie	KEYWORD1

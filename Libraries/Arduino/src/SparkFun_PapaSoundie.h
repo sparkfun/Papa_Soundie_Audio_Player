@@ -19,23 +19,30 @@ local, and you've found our code helpful, please buy us a round!
 
 Distributed as-is; no warranty is given.
 ******************************************************************************/
-
-#if defined(ARDUINO) && ARDUINO >= 100
-	#include "Arduino.h"
-#else
-	#include "WProgram.h"
-	#include "pins_arduino.h"
-#endif
-
-#include <Wire.h>
+#include "Arduino.h"
 
 
-
-
-class    
+class PapaSoundie   
 {
- public: SFE_SFX(void);
+ public: 
+	PapaSoundie(void);
+
+	void begin();
+	void playFileNumber(int number);
+	void playRepeat(int number);
+	void stopRepeat(void);
+	static const int GPIO_PLAY01 = 2;
+	static const int GPIO_PLAY02 = 3;
+	static const int GPIO_PLAY03 = 4;
+	static const int GPIO_PLAY04 = 5;
+	static const int GPIO_PLAY05 = 6;
+	static const int GPIO_VLSI_POWER_BTN = 7;
+	static const int GPIO_ATMEGA_POWER = A2;
+	
+ 
  private:
+ 	
+	void setPinNumber(int number);
 
 };
 

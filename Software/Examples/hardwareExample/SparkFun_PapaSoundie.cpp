@@ -47,7 +47,7 @@ void PapaSoundie::begin()
 void PapaSoundie::playFileNumber(int number) 
 {
 	setPinNumber(number);
-	delay(100);
+	delay(1000);
 	setPinNumber(0);
 }
 

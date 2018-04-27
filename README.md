@@ -1,4 +1,4 @@
-SparkFun <PRODUCT NAME>
+SparkFun Papa Soundie Audio Player
 ========================================
 
 ![Papa Soundie Audio Player](https://cdn.sparkfun.com//assets/parts/1/2/6/8/1/14554-SparkFun_Papa_Soundie_Audio_Player-01.jpg)

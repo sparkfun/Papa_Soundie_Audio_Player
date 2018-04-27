@@ -11,7 +11,7 @@ The Papa Soundie is the upgraded version of the Little Soundie with similar area
 
 Up to 32 files can be triggered to play from a micro SD card allowing for more storage space than that allowed on the Little Soundie. To play the audio stored in the SD card, plug in a powered speaker to the 3.5mm jack, upload an Arduino sketch the uses the Papa Soundie library, and start jammin'.
 
-Note: Speakers are required for the Papa Soundie, not headphones. Headphones won’t break anything but you won’t get any sound either.
+_Note: Speakers are required for the Papa Soundie, not headphones. Headphones won’t break anything but you won’t get any sound either._
 
 Repository Contents
 -------------------

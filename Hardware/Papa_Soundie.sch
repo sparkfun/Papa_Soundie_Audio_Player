@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="8.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -14862,7 +14863,7 @@ recommended.</text>
 <wire x1="210.82" y1="83.82" x2="210.82" y2="55.88" width="0.1524" layer="97" style="longdash"/>
 <text x="73.66" y="55.88" size="2.54" layer="97" font="vector" ratio="10">SPI Flash</text>
 <text x="114.3" y="180.34" size="2.54" layer="97" font="vector" ratio="10">VS1000D</text>
-<text x="109.22" y="175.26" size="2.54" layer="97" font="vector">VIN: 3.3 - 9V</text>
+<text x="109.22" y="175.26" size="2.54" layer="97" font="vector">VIN: 3.3 - 6V</text>
 <wire x1="210.82" y1="55.88" x2="210.82" y2="35.56" width="0.1524" layer="97" style="longdash"/>
 <wire x1="210.82" y1="55.88" x2="248.92" y2="55.88" width="0.1524" layer="97" style="longdash"/>
 </plain>
